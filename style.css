@@ -779,47 +779,101 @@ body {
 }
 
 
-/* =====================================================
-   THANK YOU TEXT
-   ===================================================== */
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
 
-.thank-you {
-    margin-top: 18px;
+.welcome-button {
 
-    display: inline-block;
+    display: flex;
 
-    padding: 11px 26px;
+    align-items: center;
 
-    border: 1px solid rgba(255, 215, 90, 0.75);
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 15px;
+
+    min-height: 44px;
+
+    padding: 4px 6px 4px 18px;
+
+    border: 1px solid
+        rgba(255,255,255,.25);
 
     border-radius: 50px;
 
     background:
+
         linear-gradient(
             135deg,
-            #f5d76e,
-            #d9ad32
+            #ffe977,
+            #ffc928
         );
 
-    color: #07152f;
+    color: #06142c;
 
-    font-family: "Playfair Display", serif;
+    font-family:
+        "Noto Sans Sinhala",
+        sans-serif;
 
-    font-size: clamp(
-        0.78rem,
-        3.2vw,
-        1rem
-    );
+    font-size: .73rem;
 
-    font-weight: 700;
+    font-weight: 800;
 
-    letter-spacing: 0.04em;
-
-    text-align: center;
+    cursor: pointer;
 
     box-shadow:
-        0 6px 20px rgba(0, 0, 0, 0.35),
-        0 0 22px rgba(255, 210, 70, 0.28);
+
+        0 8px 30px
+        rgba(255, 200, 30, .25);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+.welcome-button:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+
+        0 12px 35px
+        rgba(255, 200, 30, .4);
+
+}
+
+
+.welcome-button:active {
+
+    transform:
+        scale(.96);
+
+}
+
+
+.arrow {
+
+    width: 34px;
+    height: 34px;
+
+    display:grid;
+
+    place-items: center;
+
+    border-radius: 40%;
+
+    background: #07152d;
+
+    color: var(--gold);
+
+    font-size: 1rem;
+
 }
 
 
